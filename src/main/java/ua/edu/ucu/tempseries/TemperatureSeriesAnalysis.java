@@ -75,7 +75,7 @@ public class TemperatureSeriesAnalysis {
         double[] lessValues = new double[lessValuesCount];
         if (lessValuesCount > 0) {
             for (int i = 0; i < lessValuesCount; i++) {
-                for (int j = 0; i < temperatureSeries.length; i++) {
+                for (int j = 0; j < temperatureSeries.length; j++) {
                     if (temperatureSeries[i] < tempValue) {
                         lessValues[i] = temperatureSeries[j];
                     }
@@ -95,7 +95,7 @@ public class TemperatureSeriesAnalysis {
         double[] greaterValues = new double[greaterValuesCount];
         if (greaterValuesCount > 0) {
             for (int i = 0; i < greaterValuesCount; i++) {
-                for (int j = 0; i < temperatureSeries.length; i++) {
+                for (int j = 0; j < temperatureSeries.length; j++) {
                     if (temperatureSeries[i] > tempValue) {
                         greaterValues[i] = temperatureSeries[j];
                     }
