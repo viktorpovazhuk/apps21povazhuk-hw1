@@ -59,4 +59,11 @@ public class TemperatureSeriesAnalysisTest {
         assertEquals("TempSummaryStatistics{avgTemp=2.0, devTemp=1.0, minTemp=1.0, maxTemp=3.0}",
                 t.summaryStatistics().toString());
     }
+
+    @Test
+    public void testFindTempsLessThen() {
+        double[] arr = {1, 2, 3};
+        TemperatureSeriesAnalysis t = new TemperatureSeriesAnalysis(arr);
+        assertArrayEquals(null, new double[] {1}, t.findTempsLessThen(2), 0);
+    }
 }
